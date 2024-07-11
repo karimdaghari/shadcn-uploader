@@ -12,7 +12,7 @@ import {
 import { Uploader, type UploaderProps } from "./uploader";
 
 export type UploaderInputProps<T extends FieldValues> = UseControllerProps<T> &
-	Omit<UploaderProps, "label" | "description"> & {
+	Omit<UploaderProps, "label" | "description" | "onChange"> & {
 		label?: string;
 		description?: ReactNode;
 		dropzoneLabel?: UploaderProps["label"];

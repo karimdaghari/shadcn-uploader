@@ -21,11 +21,7 @@ export default function Home() {
 				<TabsContent value="rhf" className="w-full">
 					<Form {...form}>
 						<form>
-							<UploaderInput
-								control={form.control}
-								name="file"
-								onChange={console.log}
-							/>
+							<UploaderInput control={form.control} name="file" />
 						</form>
 					</Form>
 				</TabsContent>
