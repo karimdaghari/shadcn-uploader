@@ -19,6 +19,7 @@ interface BaseProps {
 	description?: ReactNode;
 	/**
 	 * The file types to accept
+	 * @see https://react-dropzone.js.org/#section-accepting-specific-file-types
 	 */
 	accept?: DropzoneProps["accept"];
 	/**
