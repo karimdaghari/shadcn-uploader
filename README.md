@@ -4,8 +4,8 @@ A basic uploader component for shadcn. Not linked to any backend or any third pa
 
 #### TLDR
 
-- The source code for the uploader component: `/src/components/uploader.tsx`
-- The source code for the uploader with react-hook-form integration: `/src/components/uploader-input.tsx`
+- The source code for the uploader component: [`/src/components/uploader.tsx`](https://github.com/karimdaghari/shadcn-uploader/tree/main/src/components/uploader.tsx)
+- The source code for the uploader with react-hook-form integration: [`/src/components/uploader-input.tsx`](https://github.com/karimdaghari/shadcn-uploader/tree/main/src/components/uploader-input.tsx)
 
 #### Perquisites
 
