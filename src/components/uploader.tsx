@@ -100,12 +100,13 @@ export function Uploader({
 	},
 }: UploaderProps) {
 	const [state, setState] = useState<"loading" | "error" | "success">();
-	const onUpload = async (files: File[] | File) => {
+	const onUpload = async (input: File[] | File) => {
 		// This just simulates an upload.
 		// I recommend you use `@tanstack/react-query` to handle the upload or any other (file upload) library. That way, you can get the state for free, handle retries, caching, and more.
 		const promise = await new Promise<string[]>((resolve) => {
 			setTimeout(() => {
-				resolve(["https://example.com/uploaded-file"]);
+				const files = Array.isArray(input) ? input : [input];
+				resolve(files.map((file) => URL.createObjectURL(file)));
 			}, 3000);
 		});
 		onChange(promise);
